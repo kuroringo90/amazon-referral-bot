@@ -3,7 +3,6 @@
 // PARAMETRI DA MODIFICARE
 $WEBHOOK_URL = 'https://{amzrefgen}.herokuapp.com/execute.php';
 $BOT_TOKEN = '{1117144356:AAFhsm14wX4_H7oa2PaRwQBRpKA-tA03JlU}';
-
 // NON APPORTARE MODIFICHE NEL CODICE SEGUENTE
 $API_URL = 'https://api.telegram.org/bot' . $BOT_TOKEN .'/';
 $method = 'setWebhook';
@@ -15,6 +14,3 @@ curl_setopt($handle, CURLOPT_CONNECTTIMEOUT, 5);
 curl_setopt($handle, CURLOPT_TIMEOUT, 60);
 $result = curl_exec($handle);
 print_r($result);
-//octal
-
-?> 
